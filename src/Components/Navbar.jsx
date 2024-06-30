@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Navbar = () => {
     return (
-        <div className='max-w-screen-xl mx-auto p-3 flex items-center justify-between pt-4'>
+        <div className='fixed top-0 left-0 right-0 p-7 w-full h-12 z-10 bg-black flex items-center justify-between px-20'>
             <div className="flex items-center">
                 <img src="https://cdn.prod.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="" />
                 <div className='flex gap-14 ml-20'>
