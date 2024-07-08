@@ -26,7 +26,7 @@ const Products = () => {
     return (
         <div className='mt-28 '>
             {products.map((elem,index)=>{
-                return <Product items={elem}/>
+                return <Product items={elem} key={index}/>
             })}
             
         </div>
