@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './Button';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const location = useLocation();
+    const [bgColor, setBgColor] = useState('bg-black');
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setBgColor('bg-transparent');
+        } else {
+            setBgColor('bg-black');
+        }
+    }, [location]);
 
     return (
         <>
@@ -27,7 +38,7 @@ const Navbar = () => {
                 `}
             </style>
 
-            <div className='fixed top-0 left-0 right-0 p-7 w-full h-12 z-10 bg-black flex items-center justify-between px-20'>
+            <div className={`fixed top-0 left-0 right-0 p-7 w-full h-12 z-10 ${bgColor} flex items-center justify-between px-20`}>
                 <div className="flex items-center">
                     <img src="https://cdn.prod.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="" />
 

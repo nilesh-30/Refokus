@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Project = ({ items }) => {
     return (
-        <div className='max-w-screen-xl mx-auto mt-20 rounded-2xl my-4'>
+        <div className='max-w-screen-xl mx-auto mt-20 rounded-2xl my-4' style={{backgroundColor: items.bgColor}}>
             <div className='p-4 flex gap-3'>
                 <div className='w-[50%]'>
                     <h1 className='text-[2vw] font-medium'>ARQITEL</h1>
@@ -18,8 +18,8 @@ const Project = ({ items }) => {
 
                     <div className='px-8'>
                         <h5 className='mb-3 text-sm font-normal'>Concept, Design, 3D, Webflow+WebGL Development</h5>
-                        <p className='mb-4 font-medium text-xl'>With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.</p>
-                        <Button/>
+                        <p className='mb-4 font-medium text-xl'>{items.para}</p>
+                        <Button title={"Visit Website"}/>
                     </div>
                 </div>
             </div>
