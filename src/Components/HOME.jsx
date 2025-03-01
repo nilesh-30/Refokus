@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import Marquees from './Marquees'
 import Stripes from './Stripes'
 import Cards from './Cards'

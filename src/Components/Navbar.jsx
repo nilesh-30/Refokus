@@ -67,40 +67,14 @@ const Navbar = () => {
                             }}
                         </NavLink>
 
-                        <NavLink className='transition ease-in-out hover:font-semibold hover:scale-110 duration-300' to='/about'>
+                        <NavLink className='transition ease-in-out hover:font-semibold hover:scale-110 duration-300' to='/contact'>
                             {(e) => {
                                 return (
                                     <span
                                         className={[
                                             e.isActive ? "before-content" : ""
                                         ].join(" ")}>
-                                            About
-                                        </span>
-                                )
-                            }}
-                        </NavLink>
-
-                        <NavLink className='transition ease-in-out hover:font-semibold hover:scale-110 duration-300' to='/news'>
-                            {(e) => {
-                                return (
-                                    <span
-                                        className={[
-                                            e.isActive ? "before-content" : ""
-                                        ].join(" ")}>
-                                            News
-                                        </span>
-                                )
-                            }}
-                        </NavLink>
-
-                        <NavLink className='transition ease-in-out hover:font-semibold hover:scale-110 duration-300' to='/career'>
-                            {(e) => {
-                                return (
-                                    <span
-                                        className={[
-                                            e.isActive ? "before-content" : ""
-                                        ].join(" ")}>
-                                            Career
+                                            Contact
                                         </span>
                                 )
                             }}

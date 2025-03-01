@@ -16,10 +16,10 @@ const Article = () => {
                         </h1>
                         <div className='pl-16'>
                             <p className='pb-10 font-normal text-lg tracking-light w-96'>Redefining the creative world with design, innovation, and forward-thinking as a leading Webflow Agency.</p>
-                            <div className='flex items-center justify-between rounded-full border-zinc-100 border-[1px] text-zinc-100 gap-2 px-4 py-1 h-10 max-w-44'>
+                            <button className='flex items-center justify-between rounded-full border-zinc-100 border-[1px] text-zinc-100 gap-2 px-4 py-1 h-10 max-w-44'>
                                 <span className='text-base font-medium'>News & Insight</span>
                                 <IoIosReturnRight />
-                            </div>
+                            </button>
                         </div>
                     </div>
                     <div data-scroll data-scroll-speed="0.2" className='w-[47.5rem] ml-[-4rem]'>
